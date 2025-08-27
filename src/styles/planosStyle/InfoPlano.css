@@ -1,0 +1,119 @@
+.plano-atual-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.status-label {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #29306a;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.plano-atual-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.plano-atual-left {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* diminui espaço entre grupos de texto */
+}
+
+.plano-atual-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.titulo {
+  font-weight: bold;
+  color: #0f1e4a;
+  margin: 0;
+  padding: 0;
+}
+
+.descricao p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+}
+
+.nome-plano {
+  color: #29306a;
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.detalhe {
+  color: #444;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.contato {
+  font-weight: bold;
+  color: #0f1e4a;
+  font-size: 0.95rem;
+}
+
+.label {
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
+
+.info {
+  color: #444;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.info-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* reduz o espaço entre label e info */
+  margin-top: 6px; /* controla distância entre os blocos */
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-principal {
+  background-color: #29306a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secundario {
+  background-color: white;
+  color: #111;
+  border: 1px solid #ddd;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

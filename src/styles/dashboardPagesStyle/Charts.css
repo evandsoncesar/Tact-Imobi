@@ -1,0 +1,320 @@
+/* Preço Médio */
+
+.card-grafico-preco {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100%;
+  padding: 20px;
+  h3 {
+    font-weight: bold;
+    color: #29306A;
+    text-align: left;
+  }
+}
+
+/* Evolução de Vendas */
+
+.card-grafico-evolucao {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100%;
+  h3 {
+    font-weight: bold;
+    color: #29306A;
+    text-align: left;
+  }
+}
+
+/* Velocidade de Vendas */
+
+.gauge-card {
+  background: #fff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 100%;
+  gap: 10%;
+  margin-bottom: 1vh;
+  
+}
+
+.gauge-title {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #29306A;
+  text-align: left;
+  margin-bottom: 0.8vw;
+}
+
+.gauge-content {
+  justify-items: center;
+  height: 50px;
+}
+
+.gauge-dados {
+  padding: 8px 12px;
+  color: #29306A;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30%;
+}
+
+
+/* Estoque por cidade */
+
+.card-grafico-cidade {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-grafico-cidade h3 {
+  font-weight: bold;
+  color: #29306A;
+  margin-bottom: 16px;
+}
+
+.tabela-cidade {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.tabela-header,
+.linha-cidade {
+  display: grid;
+  grid-template-columns: 5% 30% 35% 10% 10%; /* adicionada a coluna Total */
+  align-items: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tabela-header span:nth-child(4), /* Disponíveis */
+.tabela-header span:nth-child(5)  /* Total */
+{
+  text-align: center;   
+}
+
+.linha-cidade .badge {
+  margin-left: 0;       
+  justify-self: center; 
+}
+
+.tabela-header {
+  font-weight: bold;
+  color: #7a7a7a;
+}
+
+.linha-cidade span {
+  color: #333;
+}
+
+.barra-vendas {
+  display: flex;
+  height: 6px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.vendidos {
+  background-color: #29306A;
+  height: 100%;
+}
+
+.disponiveis {
+  background-color: #32BEF0;
+  height: 100%;
+}
+
+.badge {
+  background-color: #e6f4ff;
+  color: #0066cc;
+  border-radius: 8px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 40px;
+}
+
+.barra-vendas-tooltip {
+  display: flex;
+  height: 6px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #eeeeee;
+  position: relative;
+  cursor: help; 
+}
+
+.vendidos {
+  background-color: #29306A;
+  height: 100%;
+}
+
+.disponiveis {
+  background-color: #32BEF0;
+  height: 100%;
+}
+
+.barra-vendas-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.barra-vendas-wrapper::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 0;
+  color: #fff;
+  padding: 6px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.barra-vendas-wrapper:hover::after {
+  opacity: 1;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #ffffff;
+  color: #fff;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: 1;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.porcentagem-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #29306A;
+  min-width: 35px;
+}
+
+/* Estoque por tipologia */
+
+.card-grafico-tipologia {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #29306A;
+    text-align: left;
+  }
+}
+
+.subtitulo-grafico {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+/* Estoque por produto */
+
+.card-grafico-produto {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100%;
+  h3 {
+    font-weight: bold;
+    color: #29306A;
+    text-align: left;
+  }
+}
+
+/* Pop-up */
+
+.info-card {
+  position: relative;
+}
+
+/* Ícone i no canto superior direito */
+.info-card .info-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #29306A;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+.info-btn {
+  color: #29306A;
+  vertical-align: middle;
+}
+.info-popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 10;
+}
+.info-popup {
+  background: #fff; padding: 1.5rem 2rem; border-radius: 12px;
+  max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.info-popup h4 { margin-top: 0; color: #29306A; }
+.info-popup button {
+  margin-top: 1rem;
+  background-color: #29306A;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none; border-radius: 6px; cursor: pointer;
+}

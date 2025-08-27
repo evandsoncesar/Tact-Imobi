@@ -1,0 +1,109 @@
+.plano-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 25px;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: visible; 
+}
+
+.plano-card.destaque {
+  border: 2px solid #29306a;
+}
+
+.plano-card .tag-popular {
+  position: absolute;
+  top: -12px;
+  background: #29306a;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.plano-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #29306a;
+}
+
+.subtitulo {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.valores {
+  color: #29306a;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.beneficios {
+  list-style: none;
+  margin: 0 0 16px;
+  width: 100%;
+}
+
+.beneficios li {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.habilitado {
+  color: #0a0;
+}
+
+.desabilitado {
+  color: #aaa;
+}
+
+.plano-card button {
+  background: #29306a;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plano-card.básico button {
+  background: white;
+  color: #29306a;
+  border: 1px solid #29306a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plano-card.empresarial button {
+  background: white;
+  color: #29306a;
+  border: 1px solid #29306a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plano-card .tag-popular {
+  position: absolute;
+  top: -14px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: #29306a;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}

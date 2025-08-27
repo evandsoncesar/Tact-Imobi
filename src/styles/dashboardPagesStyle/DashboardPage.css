@@ -1,0 +1,129 @@
+.indicadores-mercado {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicadores-secundarios {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex-grow: 1;
+  margin-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indicadores-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.indicadores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-content: start;
+  margin-top: 0;
+  flex: 1; 
+}
+
+.indicadores-grid-secondary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-content: start;
+  gap: 10px;
+  flex: 1; 
+  height: 100%;
+}
+
+.indicadores-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.indicadores-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #29306A;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.indicadores-header svg {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.indicador-titulo {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #29306A;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dashboard-conteudo {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 15px;
+  width: 100%;
+  overflow: hidden;
+  height: 45vh;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.dashboard-esquerda {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.dashboard-direita {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding-right: 1.3vw;
+  box-sizing: border-box;
+}
+
+.graficos-principais {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.grafico {
+  width: calc(50% - 10px);
+  min-width: 280px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.grafico-secundarios {
+  width: calc(33.33% - 10px); /* Subtrai um pouco para compensar o gap */
+  min-width: 280px; /* Evita que fique muito pequeno em telas pequenas */
+  display: flex;
+  flex-direction: column;
+}
+

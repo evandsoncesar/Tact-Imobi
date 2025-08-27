@@ -1,0 +1,237 @@
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  height: auto;
+  background-color: rgba(41, 48, 106);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.sidebar.collapsed .logo-container {
+  margin-bottom: 0;
+}
+
+.sidebar-logo {
+  max-width: 150px;
+  height: auto;
+  transition: max-width 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-logo {
+  max-width: 50px;
+}
+
+.sidebar-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-inner {
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d2d3e0;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 48px;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.menu-item .icon {
+  font-size: 20px;
+  min-width: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item.active {
+  background-color: #4cc6ef;
+  color: white;
+}
+
+.menu-item.active .icon {
+  color: white;
+}
+
+/* Ícones continuam visíveis ao colapsar */
+.sidebar.collapsed .menu-item .icon {
+  margin: 0 auto;
+}
+
+.sidebar.collapsed .menu-item .menu-text {
+  display: none;
+}
+
+/* Tooltip ao colapsar */
+
+.sidebar.collapsed .menu-item::after {
+  content: attr(data-tooltip);
+  position: absolute; /* <-- mudou de fixed para absolute */
+  left: 100%;          /* começa na borda direita do menu-item */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  margin-left: 10px;  /* espaço entre ícone e tooltip */
+  z-index: 1000;
+}
+
+.sidebar.collapsed .menu-item:hover::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* Botão hamburger (mobile) */
+.hamburger-btn {
+  display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: black;
+  }
+
+  .sidebar.closed {
+    position: fixed;
+    top: 0;
+    left: -60%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: 1050;
+    overflow-y: auto;
+  }
+
+  .sidebar.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: 1050;
+    overflow-y: auto;
+  }
+
+  .menu-item {
+    flex-direction: row;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .menu-item .icon {
+    font-size: 18px;
+  }
+}
+
+/* Plan Card */
+.plan-card {
+  background: linear-gradient(160deg, #2EB5E5, #40C4FF);
+  border-radius: 16px;
+  padding: 20px 16px;
+  text-align: center;
+  color: white;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card-inner {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.plan-card-logo {
+  width: 50px;
+  height: 56px;
+  margin-bottom: 12px;
+}
+
+.plan-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.plan-card-subtitle {
+  font-size: 14px;
+  margin: 6px 0 16px;
+  color: #f0f0f0;
+}
+
+.plan-card-button {
+  background-color: #ff58cb;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.plan-card-button:hover {
+  background-color: #ff40c0;
+}

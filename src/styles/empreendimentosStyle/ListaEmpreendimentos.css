@@ -1,0 +1,6 @@
+/* ListaEmpreendimentos.css */
+.lista-empreendimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

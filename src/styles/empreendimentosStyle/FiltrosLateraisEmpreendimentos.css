@@ -1,0 +1,94 @@
+/* FiltrosLateraisEmpreendimentos.css */
+.filtros-container {
+  min-width: 260px;
+  width: 20%;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.filtros-container h3 {
+  color: #29306a;
+}
+
+.filtro-bloco {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+
+.filtro-inline {
+  display: flex;
+  gap: 8px;
+}
+
+.filtro-bloco label {
+  font-weight: 500;
+}
+
+.filtro-bloco input[type="number"],
+.filtro-bloco select {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #29306A;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.filtro-item {
+  margin-top: 12px;
+}
+
+.label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: #29306A;
+}
+
+.checkbox-label {
+  display: block;
+  margin-left: 24px;
+  color: #444;
+}
+
+.filtros-extra .dropdown {
+  margin-left: 24px;
+  margin-top: 4px;
+}
+
+.filtro-checkboxes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px; /* espaçamento tipo tab */
+  gap: 4px; /* espaço entre cada checkbox */
+}
+
+.filtro-checkboxes label {
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+
+.dropdown-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+}

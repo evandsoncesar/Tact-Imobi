@@ -1,0 +1,203 @@
+.carrossel-wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  flex: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  color: #29306A;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.label {
+  font-weight: 500;
+  color: #333;
+}
+
+.valor {
+  margin-left: 8px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #29306A;
+  padding: 1.0rem;
+  transition: transform 0.2s;
+  height: fit-content;
+}
+
+.nav-button:hover {
+  transform: scale(1.15);
+}
+
+.card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding: 0.6rem 0;
+}
+
+.main-item {
+  font-weight: 600;
+}
+
+.sub-item {
+  padding-left: 1.5rem;
+  font-weight: 400;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #29306A;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Nova Parte */
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Recuos por nível */
+/* Recuos por nível aplicados à label */
+
+.level-0 .valor {
+  color: #000; /* igual label nível 0 */
+  font-weight: 600;
+}
+
+.level-1 .valor {
+  color: #444; /* igual label nível 1 */
+  font-weight: 500;
+}
+
+.level-2 .valor {
+  color: #555; /* igual label nível 2 */
+  font-weight: 400;
+}
+
+.level-3 .valor {
+  color: #666; /* igual label nível 3 */
+  font-weight: 400;
+}
+
+
+.item .label {
+  display: flex;
+  align-items: center;
+}
+
+.level-0 .label {
+  padding-left: 0rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.level-1 .label {
+  padding-left: 1.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.level-2 .label {
+  padding-left: 3rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.level-3 .label {
+  padding-left: 4.5rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding: 0.6rem 0;
+}
+
+/* botão de informação (ícone "i") */
+.info-btn {
+  background: none;
+  border: none;
+  color: #29306A;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.info-popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.info-popup {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.info-popup h4 {
+  margin-top: 0;
+  color: #29306A;
+}
+
+.info-popup button {
+  margin-top: 1rem;
+  background-color: #29306A;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

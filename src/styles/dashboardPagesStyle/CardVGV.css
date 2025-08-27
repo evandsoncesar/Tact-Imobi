@@ -1,0 +1,76 @@
+.card-vgv {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 286px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #29306A;
+    text-align: left;
+  }
+}
+
+/* Container do card relativo para posicionamento do i */
+.info-card {
+  position: relative;
+}
+
+/* Ícone i no canto superior direito */
+.info-card .info-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #29306A;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Popup permanece igual */
+.info-popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 10;
+}
+.info-popup {
+  background: #fff; padding: 1.5rem 2rem; border-radius: 12px;
+  max-width: 400px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.info-popup h4 { margin-top: 0; color: #29306A; }
+.info-popup button {
+  margin-top: 1rem;
+  background-color: #29306A;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none; border-radius: 6px; cursor: pointer;
+}
+
+.custom-legend {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0; /* menos espaço vertical */
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.legend-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* vira bolinha */
+  display: inline-block;
+}

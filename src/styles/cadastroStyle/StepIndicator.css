@@ -1,0 +1,23 @@
+.step-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 16px;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.step.active {
+  background-color: #29306A;
+}

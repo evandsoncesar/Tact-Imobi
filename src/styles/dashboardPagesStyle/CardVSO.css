@@ -1,0 +1,35 @@
+.vso-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.vso-title {
+  font-size: 12px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #151D48;
+  margin-bottom: 8px;
+}
+
+.vso-value {
+  font-size: 50px;
+  font-weight: bold;
+  color: #151D48;
+}
+
+.vso-value.vgv-destaque {
+  color: #F55EEB;
+  margin-top: 10px;
+  font-size: 15px; 
+}
+
+.vgv-card-destaque {
+  height: 86px;
+  padding: 30px;
+
+}

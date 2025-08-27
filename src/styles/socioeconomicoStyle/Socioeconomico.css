@@ -1,0 +1,39 @@
+.socio-container {
+  flex: 1;
+  padding: 20px;
+  max-width: auto;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.socio-container h2 {
+  font-size: 1.8rem;
+  color: rgba(41, 48, 106);
+  margin-bottom: 0.1rem;
+}
+
+.socio-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.socio-container h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.carrossel-container{
+  width: 100%;
+}
+
+/* Mapa */
+.map-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}

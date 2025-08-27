@@ -1,0 +1,53 @@
+.card-secondary {
+  background-color: rgba(50, 190, 240, 0.15);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  min-width: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.card-secondary-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.card-secondary-icon {
+  background-color: #29306A;
+  border-radius: 50%;
+  min-width: 2.7vw;
+  min-height: 2.7vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #ffffff;
+}
+
+.card-secondary-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-secondary-title {
+  font-size: 0.8vw;
+  font-weight: bold;
+  color: #425166;
+}
+
+.card-secondary-value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-secondary-subtitle {
+  font-size: 12px;
+  color: #888;
+}

@@ -1,0 +1,32 @@
+/* BarraPesquisaEmpreendimentos.css */
+.barra-pesquisa-container {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.barra-pesquisa-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.barra-pesquisa-botao {
+  padding: 10px 30px;
+  background-color: #29306a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pesquisa-icon {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  font-size: 20px;
+  color: #29306A;
+}
